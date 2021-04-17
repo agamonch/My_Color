@@ -1,49 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:orientation="horizontal"
     tools:context=".MainActivity">
-
-
     <TextView
-        android:id="@+id/colorsView"
+        android:id="@+id/mainView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="#353F7A"
-        android:paddingTop="600dp"
-        android:text="@string/my_color"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="36sp"
-        android:textStyle="bold"/>
+        android:background="#A39C9C"/>
 
     <Button
         android:id="@+id/red_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="120dp"
-
-
-        android:layout_marginTop="300dp"/>
-
+        android:layout_marginTop="300dp"
+        android:backgroundTint = "@color/red"
+        android:text="@string/RED"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp" />
 
     <Button
         android:id="@+id/yellow_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="120dp"
-        android:layout_marginTop="400dp"/>
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/yellow"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp" />
 
     <Button
         android:id="@+id/green_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="120dp"
-        android:layout_marginTop="500dp"/>
+        android:layout_marginTop="500dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/green"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <TextView
+        android:id="@+id/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/my_color"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

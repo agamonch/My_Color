@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">My_Color</string>
     <string name="my_color">MY COLORS</string>
+    <string name="RED">КРАСНЫЙ</string>
+    <string name="yellow">ЖЕЛТЫЙ</string>
+    <string name="green">ЗЕЛЕНЫЙ</string>
 </resources>
